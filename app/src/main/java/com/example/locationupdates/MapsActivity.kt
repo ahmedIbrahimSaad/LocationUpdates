@@ -42,7 +42,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val sydney = LatLng(location.latitude, location.longitude)
         mMap.addMarker(MarkerOptions().position(sydney).title(resources.getString(R.string.my_location)))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
-
         Toast.makeText(this,"hi nafea",Toast.LENGTH_LONG).show()
     }
 }
