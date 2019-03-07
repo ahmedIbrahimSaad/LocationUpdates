@@ -40,6 +40,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // Add a marker in Sydney and move the camera
         val sydney = LatLng(location.latitude, location.longitude)
+
+        Toast.makeText(this,"Good morning nafea",Toast.LENGTH_LONG).show()
         mMap.addMarker(MarkerOptions().position(sydney).title(resources.getString(R.string.my_location)))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
         Toast.makeText(this,"hi nafea",Toast.LENGTH_LONG).show()
